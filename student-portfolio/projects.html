@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Student Portfolio – COS 106</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">Student<span>Portfolio</span></div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <h1>My Projects</h1>
+      <p>A selection of projects that demonstrate my skills in HTML, CSS, and JavaScript</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1: Academic Planner -->
+      <article class="project-card">
+        <div class="project-img" style="background: linear-gradient(135deg, #0f172a, #dc2626);">
+          
+          <img src="images/planner.png" alt="Academic Planner Screenshot" 
+               onerror="this.style.display='none'; this.parentElement.innerHTML='📋';">
+        </div>
+        <div class="project-body">
+          <h3>Interactive Academic Planner</h3>
+          <p>
+            A fully functional task management system built with vanilla JavaScript. 
+            Users can add, complete, and delete academic tasks. Data is saved using localStorage.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">DOM</span>
+            <span class="project-tag">localStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="planner.html">Live Demo →</a>
+            <a href="https://github.com" target="_blank" rel="noopener">View Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Student Portfolio -->
+      <article class="project-card">
+        <div class="project-img" style="background: linear-gradient(135deg, #1e293b, #0ea5e9);">
+          <img src="images/my website.png" alt="Portfolio Website Screenshot" 
+               onerror="this.style.display='none'; this.parentElement.innerHTML='🌐';">
+        </div>
+        <div class="project-body">
+          <h3>Responsive Student Portfolio</h3>
+          <p>
+            This current multi-page website. It features semantic HTML, responsive design 
+            with Flexbox & Grid, form validation, and a clean professional interface.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">Responsive</span>
+            <span class="project-tag">Flexbox</span>
+            <span class="project-tag">Grid</span>
+          </div>
+          <div class="project-links">
+            <a href="index.html">View Site →</a>
+            <a href="https://github.com" target="_blank" rel="noopener">View Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Contact Form System -->
+      <article class="project-card">
+        <div class="project-img" style="background: linear-gradient(135deg, #064e3b, #10b981);">
+          <img src="images/contact.png" alt="Contact Form Screenshot" 
+               onerror="this.style.display='none'; this.parentElement.innerHTML='📨';">
+        </div>
+        <div class="project-body">
+          <h3>Validated Contact Form</h3>
+          <p>
+            A contact form with complete JavaScript validation. It checks for empty fields, 
+            valid email format, and ensures the phone number contains only digits.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Form Validation</span>
+            <span class="project-tag">UX</span>
+            <span class="project-tag">Regex</span>
+          </div>
+          <div class="project-links">
+            <a href="contact.html">Live Demo →</a>
+            <a href="https://github.com" target="_blank" rel="noopener">View Code</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bright Elo Ovie | MIVA Open University</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

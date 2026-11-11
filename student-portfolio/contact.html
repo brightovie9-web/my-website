@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Student Portfolio – COS 106</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">Student<span>Portfolio</span></div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <h1>Contact Me</h1>
+      <p>Have a question or want to connect? Send me a message using the form below.</p>
+    </div>
+
+    <div class="contact-wrapper">
+
+      <!-- Contact Information Card -->
+      <aside class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>
+          I'm always open to discussions about web development, academic collaborations, 
+          or just a friendly hello. Fill out the form and I'll get back to you.
+        </p>
+        <div class="contact-detail">
+          <span>📧</span>
+          <span>student@miva.edu.ng</span>
+        </div>
+        <div class="contact-detail">
+          <span>📱</span>
+          <span>+234 XXX XXX XXXX</span>
+        </div>
+        <div class="contact-detail">
+          <span>🏫</span>
+          <span>MIVA Open University</span>
+        </div>
+      </aside>
+
+      <!-- Contact Form with JavaScript Validation -->
+      <form id="contact-form" class="contact-form" novalidate>
+        
+        <!-- Success Message -->
+        <div id="form-success" class="form-success"></div>
+
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name">
+          <div class="error">Name is required</div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com">
+          <div class="error">Please enter a valid email</div>
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Digits only (e.g. 08012345678)">
+          <div class="error">Phone number should contain only digits</div>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+          <div class="error">Message is required</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bright Elo Ovie | MIVA Open University</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
